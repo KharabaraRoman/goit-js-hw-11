@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.css" />
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-  <input
-    type="text"
-    name="searchQuery"
-    autocomplete="off"
-    placeholder="Search images..."
-  />
-  <button type="submit">Search</button>
-</form>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-    <script src="./js/script.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-    <script src="./js/scroll.js" type="module"></script>
+    <section class="section">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="submit">Search</button>
+      </form>
+    </section>
+    <div class="container">
+      <div class="gallery">
+        <!-- Картки зображень -->
+      </div>
+      <button type="button" class="load-more is-hidden">Load more</button>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
